@@ -17,6 +17,8 @@ h2{
     background-color: white;
     padding: 2rem;
     border-radius: 2rem;
+    min-width: fit-content;
+    min-height: fit-content;
     max-width: 90%;
     width: 20rem; /* Adjust for large screens */
     max-height: 90%; /* Ensures content stays within bounds */
