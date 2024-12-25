@@ -17,9 +17,11 @@ h2{
     background-color: white;
     padding: 2rem;
     border-radius: 2rem;
-    height: 50vh;
-    width:40vh ;
-
+    max-width: 90%;
+    width: 20rem; /* Adjust for large screens */
+    max-height: 90%; /* Ensures content stays within bounds */
+    box-sizing: border-box;
+    overflow: auto; /* Adds scroll if content overflows */
 }
 .form{
 margin: 2rem 0 1rem 0;
@@ -77,16 +79,26 @@ margin: 0;
     background-color: aquamarine;
     border-bottom-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
     font-weight: bold;
 }
 form button{
 height: 3rem;
 color: aliceblue;
-font-size:1rem ;
+font-size:0.75rem ;
 background-color: #af4d98;
 }
 form button:hover{
 opacity: 90%;
 
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .dropdown {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
